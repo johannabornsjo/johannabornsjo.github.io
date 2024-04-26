@@ -11,7 +11,7 @@ body {
 .topnavbar {
 	background-color: inherit;
 	overflow:hidden;
-	font-size: 24 px;
+	font-size: 1em;
 	width: 100%;
 	height: 50px;
 	display: inline-block;
@@ -22,18 +22,18 @@ body {
 }
 /*#f4f0ec , #555353*/	
 .topnavbar #namn {
-	font-size: 1em;
+	font-size: 0.8em;
 	color: #555353;
-	padding: 0% 5% 50%;
+	padding-left: 5%;
+	padding-top: 0.5%;
 	display: inline-block;
-	margin-left: 5%;
 }
 .topnavbar #menu{
 	float: right;
 	list-style-type: none;
 	padding: 0px;
 	border: 0px;
-	margin: 3px;
+	margin: 0.5%;
 	margin-right: 5%;
 	text-align: right;
 	display: inline-block;
@@ -76,7 +76,7 @@ body {
 .smallscreen-container {
 	align-content: center;
 	padding: 4%;
-	display: flex;
+	display: block;
 	visibility:hidden;
 	width: 92%;
 }
@@ -117,6 +117,10 @@ body {
 	grid-template-columns: 1fr 1fr;
 	visibility: visible;
 }
+@media only screen and (max-width: 1470px) {
+	.project-container{display:none; visibility: hidden;}
+	.smallscreen-container{display:block; visibility: visible;}
+}
 
 .hem-container {
 	display:grid;
@@ -147,13 +151,34 @@ body {
 	grid-column: 2 / 3;
 	grid-row: 2 / 4;
 }
+.slider{
+	min-width:200vw;
+	height: 75vh;
+	display: flex;
+	background:#a0dadb;
+	
+}
+.slide{
+	padding-top: 2%;
+	width: 200vw;
+	height:65vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
+}
+.slide img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+
+}
+
 .slide-container{
 	margin: 0px auto;
 	margin-top: 0;
 	position: relative !important;
 	width: auto;
 	height: 60vh;
-	background:#f6cd7e;
 	padding-bottom: 10%;
 	text-align: center;
 
@@ -167,8 +192,8 @@ body {
 	
 }
 .slide-img img{
-	widht: 100%;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	object-fit: contain !important;	
 }
 
@@ -315,25 +340,25 @@ body {
 
 .utstallning-list {
 	position: absolute;
-	width: 35%;
-	top: 35%;
-	left:5%;
-	font-size: 18px;
-	background: rgba(237,247,243,0.3);
+	width: 40vw;
+	top: 40vh;
+	left:5vw;
+	font-size: 1vw;
 	color:#001000;
 	display: grid;
-	padding: 1% 1% 1% 1%;
-	border-radius: 5%;
-	grid-gap: 25px 65px;
-	grid-template-columns: 55% 30% ;
+	grid-gap: 5vw 10vh;
+	grid-template-columns: 25vw 25vw ;
 	grid-template-rows: 1fr 1fr 1 fr;
 	float:center;	
 }
+
 .utstallning-list #past {
-	font-size: 30px;
+	font-size:2vw;
 	grid-column: 1 / 3;
 	grid-row: 1 / 1;
 }
+
+
 .helbild {
 	position: relative;
 	display: inline-block;
