@@ -124,14 +124,15 @@ body {
 
 .hem-container {
 	display:grid;
-	grid-template-columns: 100%;
-	grid-gap: 2%;
-	margin-left: 3%;
-	margin-right: 3%;
-	margin-top: 3%;
-	margin-bottom: 5%;
-	text-align: center;
-	
+	grid-template-columns: repeat(3, calc(((100vw-4rem)/3)));
+	grid-gap: 1 rem;
+	grid-template-rows: auto;
+	margin: 1rem 0;
+	padding: 0 1rem;
+}
+.hem-item img{
+	width: 100%;
+	height: auto;
 }
 @media only screen and (min-width: 600px) {
 	.hem-container {
@@ -340,42 +341,80 @@ body {
 
 .utstallning-list {
 	position: absolute;
-	width: 40vw;
-	top: 40vh;
-	left:5vw;
-	font-size: 1vw;
+	top: 25rem;
+	left:5rem;
+	right: 50rem;
+	font-size: calc(0.8vw + 0.8vh);
 	color:#001000;
 	display: grid;
-	grid-gap: 5vw 10vh;
-	grid-template-columns: 25vw 25vw ;
-	grid-template-rows: 1fr 1fr 1 fr;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(2, calc(((100vw-57rem)/2)));
+	grid-template-rows: auto;
 	float:center;	
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
-
+.eventrubrik {
+	position: absolute;
+	top: 25rem;
+	left:5rem;
+	color:#001000;
+	font-size: calc(1.1vw + 1.1vh);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.flex-texttrain{
+	position: absolute;
+	top: 30rem;
+	left:5rem;
+	display: flex;
+	gap: 2rem;
+	justify-content: left;
+}
+.texttrain-item{
+	color:#001000;
+	font-size: calc(0.8vw + 0.8vh);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	
+}
 .utstallning-list #past {
-	font-size:2vw;
+	font-size: calc(1.1vw + 1.1vh);
 	grid-column: 1 / 3;
 	grid-row: 1 / 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
-
-
 .helbild {
 	position: relative;
-	display: inline-block;
+	display: block;
 	overflow: auto;
 }
 .helbild img {
-	display: block;
 	width: 100%;
 	height: auto;
 }
+@media only screen and (min-width: 1000px){
+	.helbild img{
+		background-size: fit screen;
+}
+
+
+
+
+
 .overlay-text {
 		position: absolute;
 		top: 30%;
 		left: 30%;
 		transform: translate(-50%: -50%);
 		color:#ffffff;
-		font-size: 60px;
+		font-size: 2rem;
+		line-hight: 4rem;
 		text-align: center;
 }
 	.form-container {
