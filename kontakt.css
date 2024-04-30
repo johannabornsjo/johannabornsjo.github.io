@@ -51,7 +51,7 @@ body {
 	padding: 25px 50px 3px 100px;
 	margin: -10px 5px;
 	text-decoration: none;
-	font: 400 18 px "Open Sans", sans-serif;
+	font: 400 1em "Open Sans", sans-serif;
 }
 
 .topnavbar li.current a{
@@ -64,41 +64,74 @@ body {
 	width: 99%;
 	color: #deba9c;
 }
+.project-container-grid {
+	align-content: center;
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 5%;
+	padding-right: 0;
+	display:grid;
+	grid-column-gap:1%;
+	grid-row-gap: 0;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	align-items: end;
+}
 .wrapper-text{
 	background-image: url("persienner-1400.jpg");
 	background-position:center;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100vh;
+	height: 200vh;
 }
 .overlay{
-	display:inline-block;
-	}
+	height: auto;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap !important;
+	margin:0;
+	padding: 5%;
+	padding-top: 8%;
+	gap: 35% !important;
+}
+.overlay-left{
+	width:20%;		
+}
+.overlay-right{
+	width:20%;
+}
 .form-container {
-	position: absolute;
 	color: #585858;
 	background-color: #c0c0c0;
+	width: 19rem;
 	margin: 0;
-	max-width:20rem;
 	padding: 2%;
 	padding-top: 0;
-	top: 45%;
-	left:30%;
-	transform: translate(-45%, -50%);
+	
 	border-bottom: #989898 5px solid;
 	border-right:  #989898 5px solid;
 	border-top: #d8d8d8 2px solid;
 	border-left: #d8d8d8 2px solid;
+	border-radius: 5px;
+}
+.Fields{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: left;
+   padding-left: 1%;
 }
 	
 input[type=text], input[type=email], textarea[type=text] {
-	width: 90%;
-	padding: 15px;
-	margin: 5px 0 20px 0;
+	width: 85%;
 	border: none;
+	padding:5%;
+	margin-left:2%;
+	margin-bottom: 3%;
 	background-color: #dcdcdc;
 }
-
+textarea[type=text] {
+	padding-bottom: 15%;
+}
 
 input[type=text]:focus, input[type=email]:focus, textarea[type=text]:focus {
 	background-color: #e8e8e8;
@@ -122,24 +155,22 @@ input[type=text]:focus, input[type=email]:focus, textarea[type=text]:focus {
 	opacity: 1;
 }
 .info-container {
-		position: absolute;
 		color: #585858;
 		background-color: #c0c0c0;
 		margin: 0;
-		padding: 2%;
+		padding: 4%;
 		padding-top: 0;
-		max-width: 22rem;
-		min-width: 22rem;
-		top: 55%;
-		left:70%;
-		transform: translate(-45%, -50%);
+		width: 19rem;
 		border-bottom: #989898 5px solid;
 		border-right:  #989898 5px solid;
 		border-top: #d8d8d8 2px solid;
 		border-left: #d8d8d8 2px solid;
-		overflow: auto;
+		border-radius: 5px;
 	}
-	
+.info-text{
+	font-size:0.9em;
+}
+/*
 @media only screen and (max-width: 900px) and (min-width: 481px){
 	.wrapper-text{
 		background-image: url("persienner-900.jpg") ;
@@ -150,28 +181,44 @@ input[type=text]:focus, input[type=email]:focus, textarea[type=text]:focus {
 		-o-background-size: cover;
 		-moz-background-size: cover;  
 }
-	.overlay{
-		display:block;
-}
 	.info-container{
-		top: 100%;
-		left:30%;
+		margin-top:10%;
 }
+	.overlay-left{
+		width:45%;
+}
+	.overlay-right{
+		width:45%;
+}
+*/
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 790px){
+	.overlay{
+		flex-direction: column;
+		padding-top: 15%;
+}
 	.wrapper-text{
 		background-image: url("persienner-480.jpg") ;
 		width: 100%;
-		background-repeat: no repeat;
-		 background-size: cover;
-		-webkit-background-size: cover;
-		-o-background-size: cover;
-		-moz-background-size: cover;  
-}
-	.overlay{
-		display:block;
+	
 }
 	.info-container{
-		top: 100%;
-		left:30%;
+		margin-top:30%;
 }
+	.input[type=text], input[type=email], textarea[type=text] {{
+		font-size:0.8em;
+}
+		
+/*	.overlay-left{
+		width:45%;
+}
+	.overlay-right{
+		width:45%;
+}
+* */
+	.info-text{
+	font-size:0.8em;
+}
+
+
+
