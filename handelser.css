@@ -65,7 +65,7 @@ body {
 	color: #deba9c;
 }
 .wrapper-text{
-	background-image: url("slitenskylt-1400.jpg");
+	background-image: url("event-cover1.jpg");
 	background-position:center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -131,7 +131,7 @@ body {
 
 @media only screen and (max-width: 900px) and (min-width: 481px){
 	.wrapper-text{
-		background-image: url("slitenskylt-900.jpg") ;
+		background-image: url("event-cover1.jpg") ;
 		width: 100%;
 		background-repeat: no repeat;
 		 background-size: cover;

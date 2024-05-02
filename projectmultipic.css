@@ -178,7 +178,6 @@ body {
 	font-size:1.3em;
 	font-style:italic;
 	text-align: right;
-	background: #e4ebfd;
 }
 .text-container{
 	position:relative;
@@ -189,7 +188,6 @@ body {
 	top:440%;
 	font-size:0.8em;
 	text-align: right;
-	background: #4c7df9;
 	text-overflow: ellipsis;
 	overflow:hidden;
 }
@@ -210,13 +208,11 @@ body {
 	top: 26vh;
 	font-size:1.1em;
 	text-align: center;
-	background:#fbe4fd;
 }
 	.description-container{
 	top: 32vh;
 	font-size:0.5em;
 	text-align: center;
-	background:#bb75bf;
 }
 	.nav{
 		width: 100%;

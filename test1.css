@@ -123,14 +123,18 @@ body {
 }
 
 .hem-container {
-	display:grid;
-	grid-template-columns: repeat(3, calc(((100vw-10rem)/3)));
-	grid-gap: 1rem;
-	grid-template-rows: auto;
-	margin: 4rem 0;
-	padding: 0 4rem;
+	column-count:3;
+	column-gap: 1rem;
+	margin: 2rem
+}
+.hem-item{
+	display: inline-block; 
+	margin: 0 0 1rem;
+	width: 100%;
+	height: auto;
 }
 .hem-item img{
+	display; 
 	width: 100%;
 	height: auto;
 }
@@ -339,13 +343,19 @@ body {
 .description-container{
 	position:relative;
 }
+.helbild {
+	position: relative;
+}
+.helbild img {
+	width: 100%;
+	height: auto;
+}
 .overlay-text {
 		position: absolute;
-		top: 30%;
-		left: 30%;
-		transform: translate(-50%: -50%);
+		top: 40%;
+		left: 32%;
 		color:#ffffff;
-		font-size: 2rem;
+		font-size: 3em;
 		line-hight: 4rem;
 		text-align: center;
 }
