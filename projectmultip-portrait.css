@@ -78,8 +78,6 @@ body {
 .container-left{
 	width:45%;	
 	height: auto;
-	
-	
 }
 .container-right{
 	width:45%;
@@ -203,12 +201,12 @@ body {
 		width:100%;
 }
 	.rubrik-container{
-	top: 26vh;
+	top: 37vh;
 	font-size:1.1em;
 	text-align: center;
 }
 	.description-container{
-	top: 32vh;
+	top: 43vh;
 	font-size:0.5em;
 	text-align: center;
 }
