@@ -64,20 +64,41 @@ body {
 	width: 99%;
 	color: #deba9c;
 }
-
-.helbild {
-	position: relative;
+.wrapper-text{
+	background-image: url("underconst-cover1.JPG" );
+	background-position:center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	background-repeat: no-repeat;
 }
-.helbild img {
-	width: 100%;
+.overlay{
 	height: auto;
+	display:flex-box;
+	flex-direction: row;
+	flex-wrap: wrap !important;
+	position: relative;
+	top: 35%;
+	
 }
-.overlay-text {
-		position: absolute;
-		top: 40%;
-		left: 35%;
-		color:#ffffff;
-		font-size: 3em;
-		line-hight: 4rem;
-		text-align: center;
+.overlay-text{
+	position: static;
+	color:#ffffff;
+	font-size: 3em;
+	line-hight: 4rem;
+	text-align: center;	
+	margin:auto;
+	float: center;
 }
+
+@media only screen and (max-width: 790px){
+
+	.wrapper-text{
+		background-image: url("underconst-cover480.JPG") ;
+		width: 100%;
+}
+	.overlay-text{
+		font-size: 1.8em;
+		line-hight: 3rem;	
+}
+
