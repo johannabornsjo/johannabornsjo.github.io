@@ -90,7 +90,7 @@ body {
 }
 .text-container{
 	width:100%;
-	font-size:0.7vw;
+	font-size:0.8vw;
 	font-style:normal;
 	text-align: left!important;
 }
@@ -118,16 +118,14 @@ body {
 }
 .description-container2{
 	width:100%;
-	padding: 5% 0 0 10%;
+	padding: 0 0 0 10%;
 	font-size:1.9vw;
 	font-style:normal;
 	text-align: left;
 }
-@media only screen and (max-width: 1470px) {
+@media only screen and (max-width: 1470px) and (orientation:portrait){
 	.project-container{display:none; visibility: hidden;}
 	.smallscreen-container{display:block; visibility: visible;}
-	.rubrik-container{font-size:2.7vw;text-align:center;top: 55%;}
-	.text-container{font-size:1.5vw;text-align:center;}
-	.description-container{font-size:1.4vw;text-align:center;top: 60%}
+
 }
 
