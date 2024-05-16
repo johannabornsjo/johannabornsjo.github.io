@@ -198,20 +198,26 @@ body {
 	scroll-snap-type: x mandatory;
 }
 .left{
-	background:rgba(228,231,229, 0.4);
-	width: 6%;
+	
+	
+	border-top: 1.5vh solid transparent;
+	border-bottom: 1.5vh solid transparent;
+	border-right: 1.5vh solid #e7e5e5;
 
 	position: absolute;
-	left: -3%;
+	left: 4%;
 	overflow: visible;
 	z-index: 99;
 }
 .right{
-	background:rgba(228,231,229, 0.4);
-	width: 6%;
+	
 	
 	position: absolute;
-	right: -3%;
+	border-top: 1.5vh solid transparent;
+	border-bottom: 1.5vh solid transparent;
+	border-left: 1.5vh solid #e7e5e5;
+	position: absolute;
+	right: 4%;
 	overflow: visible;
 	z-index: 99;
 }
